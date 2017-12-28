@@ -1,0 +1,27 @@
+{
+    "plugins": [],
+    "recurseDepth": 10,
+    "source": {
+        "include": ["./README.md", "./index.js", "./lib/modules/foo-api.module.js", "./lib/modules/ping.module.js", "./lib/models/token.model.js", "./lib/modules/auth.module.js"]
+        //"includePattern": ".+\\.js(doc|x)?$",
+        //"excludePattern": "(^|\\/|\\\\)_"
+    },
+    "sourceType": "module",
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc", "closure"]
+    },
+    "opts": {
+        //"template": "templates/default", // same as -t templates/default
+        //"encoding": "utf8", // same as -e utf8
+        "destination": "./docs/" // same as -d ./out/
+        //"template": "./node_modules/jsdoc/templates/silent"
+        //"recurse": true, // same as -r
+        //"tutorials": "path/to/tutorials", // same as -u path/to/tutorials
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "referenceTitle": "Foo SDK"
+    }
+}

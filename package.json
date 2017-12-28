@@ -1,0 +1,45 @@
+{
+  "name": "foosdk",
+  "version": "0.0.1",
+  "description": "SDK Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec/foo-api.spec.js --timeout 5000",
+    "manual": "node spec/manual-tests.js",
+    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha spec/foo-api.spec.js",
+    "coveralls": "npm run coverage -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaylorAckley/NodeSDK-Boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "example",
+    "SDK",
+    "api"
+  ],
+  "author": "Taylor Ackley",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/TaylorAckley/NodeSDK-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/TaylorAckley/NodeSDK-Boilerplate#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "dotenv": "^4.0.0",
+    "moment": "^2.20.1",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.5.5",
+    "mocha": "^4.0.1",
+    "mocha-lcov-reporter": "^1.3.0",
+    "node-localstorage": "^1.3.0"
+  }
+}
