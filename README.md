@@ -2,6 +2,8 @@
 
 A boilerplate SDK that can be cloned to help you create a Node SDK on top of your restful API.   Comes with a `Ping` module to get you started.
 
+[Medium Article](https://medium.com/@TaylorAckley/making-a-sdk-for-your-api-in-node-5e05696818ae)
+
 ## Features
 
 - Handles authentication and stores the token with the SDK for retrieval.   Grabs a new token when it expires.
@@ -62,7 +64,7 @@ The architecure is straight forward and should be easy to follow.
 - Private methods and properties are prefixed with an underscore.   These are methods and properties needed by your public methods, but in general aren't meant to be used with your SDK.
 - Filenaming uses the Angular CLI style.   `<name with dashes>.<type>.js`
 
-### Directory Structure
+## Tips
 
 ## Contributing
 
